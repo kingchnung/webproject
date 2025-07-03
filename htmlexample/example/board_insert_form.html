@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 등록</title>
+    <style>
+        div {
+            width: 500px;
+            margin: 20px auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>
+        <pre><h2>(☞ﾟヮﾟ)☞게시글 등록☜(ﾟヮﾟ☜)</h2></pre>
+        </h2>
+        <form>
+            <label for="writer">작성자</label>
+            <input type="text" id="writer" name="writer" required>
+
+            <label for="title">제목</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="writer">내용</label>
+            <textarea id ="content" name="content" rows="10" required></textarea>
+
+            <button type="submit">등록</button>
+            <button type="reset">초기화</button>
+        </form>
+    </div>
+</body>
+</html>
