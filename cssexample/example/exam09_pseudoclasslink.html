@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서 링크와 가상 클래스 선택자</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        h2 {
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        /*가상 클래스 스타일링 */
+        a:link {
+            color:blue;
+        }
+        a:visited {
+            color: purple;
+        }
+        a:hover {
+            color: rgb(77, 231, 63);
+            background-color: #f0f0f0;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        a:active {
+            color: red;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            background-color: lightyellow;
+            border: 2px solid orange;
+        }
+    </style>
+    <script>
+        function searchBook() {
+            const site = document.getElementById("bookSite").value;
+            if(site.trim() !== "") {
+                location.href = site;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>도서 사이트 링크</h2>
+    <ul>
+        <li>
+            <a href="https://www.yes24.com" target="_blank">예스24</a> - 온라인 서점
+
+        </li>
+        <li>
+            <a href="https://www.aladin.co.kr" target="_blank">알라딘</a> - 중고 및 새 책
+        </li>
+        <li>
+            <a href="https://book.naver.com" target="_blank">네이버 책</a> - 책 검색 및 리뷰
+        </li>
+    </ul>
+
+    <h3>
+        원하는 도서 사이트 직접 이동
+    </h3>
+    <form>
+        <label for="bookSite">사이트 주소 입력:</label>
+        <input type="text" id="bookSite" placeholder="예: https://www.yes24.com">
+        <button type="button" onclick="searchBook()">이동</button>
+    </form>
+</body>
+</html>
