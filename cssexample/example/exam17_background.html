@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경 스타일 확장 예제</title>
+    <style>
+        body {
+            font-family: 'Nanum Gothic', sans-serif;
+            background-color: #999292;
+            padding: 20px;
+        }
+        .bg-color {
+            color: #8f1616;
+            width: 550px;
+            height: 300px;
+            line-height: 350px;
+            text-align: center;
+            margin: 20px auto;
+
+            background-color: #4a90e2;
+            background-image: url('../../htmlexample/image/예.jpeg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            /* background-size: 50%; */
+            background-size: cover;
+            /* background: #4a90e2 url(../../htmlexample/image/예.jpeg) no-repeat center center; */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>배경 스타일</h2>
+    </header>
+    <div class="bg-color">배경 스타일</div>
+</body>
+</html>

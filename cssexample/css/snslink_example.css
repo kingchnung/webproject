@@ -1,0 +1,34 @@
+body {
+    background-color: #bbf1ef;
+    font-family: 'Verdana', 'Apple SD Gothic Neo',
+    'Nanum Gothic', sans-serif;
+    align-content: center;
+    text-align: center;
+}
+h1 {
+    border: solid white;
+    border-radius: 20px;
+    width: 300px;
+    margin: 10px auto;
+}
+img {
+    border-radius: 50%;
+}
+p {
+    font-weight: bold;
+}
+ul li {
+
+    list-style-type: none;
+    border: 1px;
+    border-radius: 4px;
+    background-color: #ff9a9e;
+    margin: 10px auto;
+    padding: 20px 40px 20px 20px;
+    width: 300px;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

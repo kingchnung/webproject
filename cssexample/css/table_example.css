@@ -1,0 +1,36 @@
+table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+caption {
+    font-weight: bolder;
+    font-size: large;
+    margin: 10px;
+}
+th:nth-child(2) {
+    color: white;
+    background-color: #43cdff;
+}
+th:nth-child(3) {
+    color: white;
+    background-color: #81d733;
+}
+th:nth-child(4) {
+            
+    background-color: yellow;
+}
+th:nth-child(5) {
+            
+    background-color: orange;
+}
+th:nth-child(6) {
+            
+    background-color: red;
+}
+th, td {
+    border: 1px solid gray;
+    padding: 8px 5px;
+    vertical-align: middle;
+}
