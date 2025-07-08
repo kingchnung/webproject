@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display-블록과 인라인</title>
+    <style>
+        div[class^="content"] img{
+            width: 250px;
+            height: 220px;
+            margin: 10px 5px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 5px 5px 7px 7px #ccc;
+        }
+        .content2 img{
+            display: block;
+        }
+        div[class^="data"] div{
+            width: 200px;
+            height: auto;
+            margin: 10px 5px;
+            padding: 5px;
+            border: 1px solid black;
+        }
+        #text1 {background-color: lightyellow;}
+        #text2 {background-color: lightgreen;}
+        #text3 {background-color: lightblue;}
+        
+        .data2 div{
+            display: inline-block;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <h4>인라인 요소</h4>
+    <div class="content1">
+        <img src="../image/capyzou1.png">
+        <img src="../image/tulip.gif">
+        <img src="../../htmlexample/image/예.jpeg">
+    </div>
+
+    <h4>인라인 요소를 블록 요소로 설정</h4>
+    <div class="content2">
+        <img src="../../htmlexample/image/pic1.jpg">
+        <img src="../../htmlexample/image/pic2.jpg">
+        <img src="../../htmlexample/image/모르겠어요.jpeg">
+    </div>
+
+    <h4>블록 요소</h4>
+    <div class="data1">
+        <h2>노력 명언</h2>
+        <div id="text1">
+            <p>세상엔 두 종류의 사람이있다.</p>
+            <p>물론, 두 사람 모두 다 옳다.</p>
+        </div>
+        <div id="text2">
+            <p>만약 성공의 비결이란 것이 있다면</p>
+        </div>
+        <div id="text3">
+            <p>사람은 누구나 자신이 할 수 있따고 생각하는</p>
+            <p>모든 일이 당신의 뜻대로</p>
+        </div>
+    </div>
+
+    <h4>블록 요소를 인라인 요소로 설정</h4>
+    <div class="data2">
+        <h2>노력 명언</h2>
+        <div id="text1">
+            <p>세상엔 두 종류의 사람이있다.</p>
+            <p>물론, 두 사람 모두 다 옳다.</p>
+        </div>
+        <div id="text2">
+            <p>만약 성공의 비결이란 것이 있다면</p>
+        </div>
+        <div id="text3">
+            <p>사람은 누구나 자신이 할 수 있따고 생각하는</p>
+            <p>모든 일이 당신의 뜻대로</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            width: 100%;
+        }
+        .center-wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            position: relative;
+        }
+        .image-stack{
+            position: relative;
+            width: 300px;
+            height: 200px;
+        }
+        .photo{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 4px 4px 20px 10px rgba(22, 22, 22, 0.2);
+            /* transition: transform 0.3s ease; */
+        }
+        .photo1{
+            z-index: 1;
+            left: 250px;
+            bottom: 150px;
+        }
+        .photo2{
+            z-index: 2;
+            right: 250px;
+            top: 150px;
+        }
+        .photo3{
+            z-index: 3;
+            top: 150px;
+            left: 250px;
+        }
+        .photo4{
+            z-index: 4;
+            bottom: 150px;
+            right: 250px;
+        }
+        .photo5{
+            z-index: 1;
+        }
+        .photo6{
+            z-index: 6;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>나의 사진 전시회</h1>
+    <div class="center-wrapper">
+        <div class="image-stack">
+            <img class="photo photo1" src="../image/bear.jpg" alt="bear" target="bear"/>
+            <img class="photo photo2" src="../image/bg4.jpg" alt="heart" target="heart"/>
+            <img class="photo photo3" src="../image/cat.gif" alt="cat" target="cat"/>
+            <img class="photo photo4" src="../image/guitar-bg.jpg" alt="guitar" target="guitar"/>
+            <img class="photo photo5" src="../image/photo.jpg" alt="photo" target="photo"/>
+            <img class="photo photo6" src="../image/pic2.jpg" alt="pic2" target="pic2"/>
+        </div>
+    </div>
+</body>
+
+</html>
