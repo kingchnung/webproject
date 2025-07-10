@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/05_controlStatement.css">
+</head>
+<body>
+    <h2>성적 구하기</h2>
+    <div>
+        <input type="text" name="kor" id="kor" placeholder="국어점수(kor)">
+        <input type="text" name="eng" id="eng" placeholder="영어점수(eng)">
+        <input type="text" name="math" id="math" placeholder="수학점수(math)">
+        <button type="button" onclick="run()">성적구하기</button>
+    </div>
+    <div>
+        <input type="text" name="sum" id="sum" placeholder="합계" readonly>
+        <input type="text" name="avg" id="avg" placeholder="평균" readonly>
+        <input type="text" name="credit" id="credit" placeholder="학점" readonly>
+    </div>
+
+    <h3>숫자 맞추기 게임</h3>
+    <h4>이 게임은 컴퓨터가 무작위로 숫자를 맞추는 게임입니다. 숫자는 1부터 10 사이의 정수입니다.</h4>
+    <div>
+        숫자: <input type="number" name="number" id="number">
+        <button type="button" onclick="check()">확인</button>
+    </div>
+    <div>
+        추측횟수: <input type="number" name="count" id="count">
+        힌트: <input type="text" name="hint" id="hint">
+    </div>
+
+
+    <h3>간단한 반복문 실습</h3>
+    <div>
+        1. 반복문을 사용하여 h1~h6 태그로 Hello JavaScript를 출력해 주세요.<br />
+        2. 반복문을 사용하여 이미지를 출력해 주세요.<br />
+        <button type="button" onclick="print()">출력</button>
+    </div>
+    <br />
+    <div>
+        <p id="h1"></p>
+        <p id="h2"></p>
+        <p id="h3"></p>
+        <p id="h4"></p>
+        <p id="h5"></p>
+        <p id="h6"></p>
+    </div>
+    <div id="div1"></div>
+    
+
+    <script src="../js/05_controlStatement.js"></script>
+</body>
+</html>

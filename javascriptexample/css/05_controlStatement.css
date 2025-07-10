@@ -1,0 +1,8 @@
+#div1 {
+    display: flex-wrap;
+    
+}
+#div1 img{
+    margin: 4px;
+    height: 200px;
+}
