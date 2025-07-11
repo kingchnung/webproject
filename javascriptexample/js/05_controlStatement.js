@@ -44,25 +44,47 @@ function print() {
 
     }
 }
+let count = 0;
+const answer = Math.floor(Math.random() * 10) + 1;
+let gameOver = false;
 
 function check() {
-    const answer = Math.floor(Math.random() * 10) + 1;
-    const input = document.getElementById("number").value;
-    const hint = document.getElementById("hint");
-    let count = 0;
+    if (gameOver) return;
 
-    while (answer != input) {
-        if (answer == input) {
-            hint.value = "정답!"
+    let input = document.getElementById("number");
+    let number = input.value;
+    let hint = "";
+
+    if (isNaN(number) || number < 1 || number > 10) {
+        alert("1 ~ 10 범위의 숫자를 입력해주세요.")
+        input.value = "";
+        input.focus();
+        return;
+    }
+    count++;
+    if (number == answer) {
+        hint = "정답!";
+        gameOver = true;
+    } else if (number < answer) {
+        hint = "up!";
+    } else {
+        hint = "down!";
+    }
+
+    document.getElementById("hint").value = hint;
+    document.getElementById("count").value = count;
+}
+
+function gugudan() {
+    const gugudan = document.getElementById("gugudan");
+
+    for (let indexR = 1; indexR < 10; indexR++) {
+        gugudan.innerHTML += `<table><tr><th>${indexR}단</th></tr>`;
+        for (let indexC = 1; indexC < 10; indexC++) {
+            gugudan.innerHTML += `<tr><td>${indexR}x${indexC}=${indexR * indexC}</td></tr>`;
+
         }
-
-        if (answer > input) {
-            hint.value = "up!";
-
-        } else {
-            hint.value = "down!";
-        }
-        ++count;
-        document.getElementById("count").value = count;
+        gugudan.innerHTML += "</table>";
     }
 }
+

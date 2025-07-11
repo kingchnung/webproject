@@ -1,0 +1,11 @@
+pre code{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+#divBg {
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 200px;
+    height: 200px;
+}
