@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>form 예제1</h3>
+    <form name="example1">
+        <p><input type="text" name="example1text" id="example1text"></p>
+        <textarea name="textarea" id="textarea"></textarea>
+    </form>
+    <h3>form 예제2</h3>
+    <form name="example2" id="example2">
+        <div>
+        <label for="width">너비(width): </label><input type="number" name="width" id="width" />
+        <label for="height">높이(height): </label><input type="number" name="height" id="height" />
+        <label for="color">배경색</label><input type="color" name="color" id="color" />
+        </div>
+        <div>
+            <label for="text">출력할 문자열</label>
+            <input type="text" name="text" id="text" />
+        </div>
+        <button type="button" id="print">출력</button>
+    </form>
+    <p id="output"></p>
+
+    <script src="../js/form_example.js"></script>
+</body>
+</html>
