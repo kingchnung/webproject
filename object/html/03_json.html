@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/03_json.css">
+</head>
+
+<body>
+    <h3>도서 목록</h3>
+    <div>
+        <input type="text" name="title" id="title" placeholder="제목">
+        <input type="text" name="author" id="author" placeholder="책지은이">
+        <input type="number" name="year" id="year" placeholder="출판년도">
+        <button type="button" id="add">추가</button>
+    </div>
+    <table id="bookList">
+        <colgroup>
+            <col id="titleTb">
+            <col id="authorTb">
+            <col id="yearTb">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>제목</th>
+                <th>저자</th>
+                <th>출판 연도</th>
+            </tr>
+        <tbody></tbody>
+        </thead>
+    </table>
+
+
+    <script src="../js/03_json.js"></script>
+</body>
+
+</html>

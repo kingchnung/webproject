@@ -1,0 +1,19 @@
+#bookList {
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 580px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+colgroup col:nth-child(1) { width: 60%;}
+colgroup col:nth-child(2) { width: 20%;}
+colgroup col:nth-child(3) { width: 20%;}
+
+th, td {
+border: 1px solid black;
+padding: 5px 10px;
+}
+th {
+    background-color: #ccc;
+}
