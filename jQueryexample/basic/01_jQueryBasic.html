@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #treeImage {
+            width: 120px;
+            height: 79px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>JS와 jQuery 차이점</h3>
+    <button type="button" id="jsBtn">JS 버튼</button>
+    <button type="button" id="jQueryBtn">jQuery 버튼</button>
+    <hr />
+
+    <div id="wrapper">
+        <ul>
+            <li class="one">첫 번째</li>
+            <li class="two">두 번째</li>
+            <li class="three">
+                <span>세 번째(글자색을 red로 설정해 보세요)</span>
+            </li>
+            <li class="four">네 번째</li>
+        </ul>
+        <button type="button" id="colorChange">색 변경</button>
+    </div>
+
+    <h5>예제 - 1</h5>
+    <div>
+        <pre>
+        [참고]
+        JS : document.getElementById("id명").innerHTML = 값
+        jQuery : $("#id명").html("값")
+    </pre>
+        <h1 id="hello">jQuery 시작합니다~~</h1>
+        <p id="text"></p>
+        <button type="button" id="btnChange">데이터 변경</button>
+    </div>
+
+    <h5>예제 - 2</h5>
+    <p>
+        <img src="../image/easys-1.jpg" alt="이미지" id="img" />
+    </p>
+
+    <h5>예제 - 3</h5>
+    <div>
+        <pre>
+        [요구사항]
+        1. "010-1234-5678" 형식으로 핸드폰 번호를 입력하고자 한다.<br />
+        2. 위의 패턴에 맞지 않으면 "전화번호 형식이 유효하지 않습니다." 라고 출력해 주세요<br />
+
+        [참고]
+        input 요소의 값을 얻고자 할 때
+        JS : document.getElementById("id명").value;
+        jQuery : $("#id명").val();
+    </pre>
+        <label for="phone">전화번호</label>
+        <input type="text" id="phone" placeholder="010-1234-5678"><br />
+        <span id="phoneResult"></span>
+    </div>
+
+    <h5>예제 - 4</h5>
+    <div id="input">
+        <h2>단독 개체의 확인</h2>
+        <div id="singleButton">클릭하세요.</div>
+
+        <h2>복수 개체의 확인</h2>
+        <div>
+            <button type="button" class="multiButton">클릭</button>
+            <button type="button" class="multiButton">클릭</button>
+            <button type="button" class="multiButton">클릭</button>
+            <button type="button" class="multiButton">클릭</button>
+        </div>
+    </div>
+
+    <h5>예제 - 5</h5>
+    <p>이미지를 클릭</p>
+    <img src="../image/tree-1.jpg" alt="이미지" id="treeImage" />
+
+
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/01_jQueryBasic.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+#join {
+    border: 1px solid black;
+    width: 700px;
+    box-sizing: border-box;
+}
+div {
+    padding: 5px;
+    border-bottom: 1px dotted gray;
+}
+
+#join div:nth-child(10) {
+    border-bottom: none;
+    text-align: center;
+}
+
+div.menu {
+    display: inline-block;
+    border-bottom: none;
+    width: 80px;
+}

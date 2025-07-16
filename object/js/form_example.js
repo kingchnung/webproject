@@ -1,8 +1,16 @@
 
-document.getElementById("example1text").addEventListener("keydown", () => {
-    const text = document.getElementById("example1text");
-    document.getElementById("textarea").innerHTML = text.value;
+document.getElementById("example1text").addEventListener("keydown", (e) => {
+    if (e.key ==="Enter") {
+        e.preventDefault();
 
+        const word = e.target;
+        const result = document.getElementById("textarea");
+
+        result.value += word.value + "\n";
+
+        word.value = "";
+        word.focus();
+    }
 });
 
 document.getElementById("print").addEventListener("click", ()=> {
@@ -16,4 +24,8 @@ document.getElementById("print").addEventListener("click", ()=> {
     output.style.width = `${width.value}px`;
     output.style.height = height.value + "px";
     output.style.backgroundColor = color.value;
+
+    output.style.display="flex";
+    output.style.justifyContent="center";
+    output.style.alignItems="center";
 });

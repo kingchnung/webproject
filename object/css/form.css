@@ -1,0 +1,18 @@
+label::after {
+    content: '*';
+    color: red;
+}
+
+fieldset {
+    width: 400px;
+}
+
+div {
+    border-bottom: 1px dotted black;
+    padding: 5px;
+    width: 400px;
+}
+
+#button {
+    text-align: center;
+}

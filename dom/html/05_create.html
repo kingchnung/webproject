@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동적으로 요소 생성</title>
+    <style>
+        .container{
+            width: 800px;
+            display: flex;
+            background-color: #eee;
+            border: 1px solid #222;
+        }
+        #option {
+            flex-flow: row nowrap;
+        }
+        .box {
+            padding: 5px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="option">
+        <div class="box">
+            <button type="button">추가</button>
+            <button type="button">삭제</button><br />
+            <label>동적으로 요소 추가 및 삭제</label>
+            <ul></ul>
+        </div>
+
+        <!-- 버튼 클릭시 동적 요소 2개이상을 생성하여 추가 -->
+         <div class="box">
+            <!-- 동적 요소 생성 -->
+             <button type="button" id="print">동적 요소 생성</button>
+             <div id="result"></div>
+         </div>
+    </div>
+
+    <script src="../../jQueryexample/js/jquery-3.7.1.min.js"></script>
+    <script src="../js/05_create.js"></script>
+</body>
+</html>

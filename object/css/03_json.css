@@ -17,3 +17,7 @@ padding: 5px 10px;
 th {
     background-color: #ccc;
 }
+
+.price {
+    width: 30px;
+}
